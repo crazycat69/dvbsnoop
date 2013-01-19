@@ -273,6 +273,7 @@ int  print_FE_BasicCapabilities (int v, int fd_fe)
       if (fi.caps &  FE_CAN_BANDWIDTH_AUTO)		out_nl (v,"auto bandwidth");
       if (fi.caps &  FE_CAN_GUARD_INTERVAL_AUTO)	out_nl (v,"auto guard interval");
       if (fi.caps &  FE_CAN_HIERARCHY_AUTO)	out_nl (v,"auto hierarchy");
+      if (fi.caps &  FE_CAN_MULTISTREAM)	out_nl (v,"multistream");
 
 #ifdef FE_CAN_CLEAN_SETUP
       if (fi.caps &  FE_CAN_CLEAN_SETUP)	out_nl (v,"clean setup");
