@@ -429,7 +429,7 @@ int  cmdline_options (int argc, char **argv, OPTION *opt)
   // -- if not set by cmdline, set by 1.) default, 2.) adapterNr & deviceNr
   //
 
-  if (   opt->dvbAdapterNr < 0 || opt->dvbAdapterNr > 9
+  if (   opt->dvbAdapterNr < 0 || opt->dvbAdapterNr > 99
       || opt->dvbDeviceNr  < 0 || opt->dvbDeviceNr  > 9)  {
     printf("Error: Illegal DVB adapter/card number or illegal DVB device number. \n");
     return(0); 
